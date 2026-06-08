@@ -1,8 +1,9 @@
 [build]
-  publish = "."
   command = "npm install"
+  publish = "."
 
 [[redirects]]
-  from = "/*"
-  to = "/api/proxy/:splat"
+  from = "/"
+  to = "/api/proxy"
   status = 200
+  force = true
